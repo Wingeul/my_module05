@@ -1,22 +1,22 @@
-#include "Form.hpp"
+#include "AForm.hpp"
 #include "Bureaucrat.hpp"
 
-Form::Form() : name("Default"), isSigned(false), signGrade(150), executeGrade(150)
+AForm::AForm() : name("Default"), isSigned(false), signGrade(150), executeGrade(150)
 {
     std::cout << "Default constructor called" << std::endl;
 }
 
-Form::~Form()
+AForm::~AForm()
 {
     std::cout << "Destructor called" << std::endl;
 }
 
-Form::Form(const Form &copy) : name(copy.name), isSigned(copy.isSigned), signGrade(copy.signGrade), executeGrade(copy.executeGrade)
+AForm::AForm(const AForm &copy) : name(copy.name), isSigned(copy.isSigned), signGrade(copy.signGrade), executeGrade(copy.executeGrade)
 {
     std::cout << "Copy constructor called" << std::endl;
 }
 
-Form::Form(const std::string &name, int signGrade, int executeGrade) 
+AForm::AForm(const std::string &name, int signGrade, int executeGrade) 
     : name(name), isSigned(false), signGrade(signGrade), executeGrade(executeGrade)
 {
     if (signGrade < 1 || executeGrade < 1)
@@ -25,7 +25,7 @@ Form::Form(const std::string &name, int signGrade, int executeGrade)
         throw GradeTooLowException();
 }
 
-Form &Form::operator=(const Form &other)
+AForm &AForm::operator=(const AForm &other)
 {
     if (this != &other)
     {
@@ -34,23 +34,23 @@ Form &Form::operator=(const Form &other)
     return *this;
 }
 
-const std::string &Form::getName() const {
+const std::string &AForm::getName() const {
     return name;
 }
 
-bool Form::getIsSigned() const {
+bool AForm::getIsSigned() const {
     return isSigned;
 }
 
-int Form::getSignGrade() const {
+int AForm::getSignGrade() const {
     return signGrade;
 }
 
-int Form::getExecuteGrade() const {
+int AForm::getExecuteGrade() const {
     return executeGrade;
 }
 
-void Form::beSigned(Bureaucrat &bureaucrat)
+void AForm::beSigned(Bureaucrat &bureaucrat)
 {
     if (isSigned)
     {
@@ -68,7 +68,7 @@ void Form::beSigned(Bureaucrat &bureaucrat)
     std::cout << bureaucrat.getName() << " signed "<< name << std::endl;
 }
 
-std::ostream &operator<<(std::ostream &out, const Form &form)
+std::ostream &operator<<(std::ostream &out, const AForm &form)
 {
     std::string signedStatus;
     signedStatus = "no";
