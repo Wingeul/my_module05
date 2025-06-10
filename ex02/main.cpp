@@ -21,9 +21,9 @@ int main() {
         bureaucrat1.signForm(shrubberyForm);
         std::cout << shrubberyForm;
         shrubberyForm.execute(bureaucrat2);
-        bureaucrat2.signForm(robotomyForm);
+        //bureaucrat2.signForm(robotomyForm);
         std::cout << robotomyForm;
-        robotomyForm.execute(bureaucrat2);
+        bureaucrat2.executeForm(robotomyForm);
 
     }
     catch (std::exception &e)
