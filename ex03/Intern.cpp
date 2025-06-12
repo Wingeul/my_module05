@@ -24,14 +24,34 @@ Intern &Intern::operator=(const Intern &other)
     return *this;
 }
 
-AForm *Intern::makeForm(const std::string &formName, const std::string &target) const
+static AForm	*makePresident(const std::string target)
 {
-    if (formName == "shrubbery creation")
-        return new ShrubberyCreationForm(target);
-    else if (formName == "robotomy request")
-        return new RobotomyRequestForm(target);
-    else if (formName == "presidential pardon")
-        return new PresidentialPardonForm(target);
-    else
-        throw WrongFormException();
+	return (new PresidentialPardonForm(target));
+}
+
+static AForm	*makeRobot(const std::string target)
+{
+	return (new RobotomyRequestForm(target));
+}
+
+static AForm	*makeShrubbery(const std::string target)
+{
+	return (new ShrubberyCreationForm(target));
+}
+
+AForm	*Intern::makeForm(const std::string &form_to_create, const std::string &target_for_form) const
+{
+	AForm *(*all_forms[])(const std::string target) = {&makePresident, &makeRobot, &makeShrubbery};
+	std::string forms[] = {"Presidential pardon", "robotomy request", "Shrubbery creation"};
+
+	for (int i = 0; i < 3; i++)
+	{
+		if (form_to_create == forms[i])
+		{
+			std::cout << "Intern creates " << form_to_create << std::endl;
+			return (all_forms[i](target_for_form));
+		}
+	}
+	throw WrongFormException();
+	return (NULL);
 }

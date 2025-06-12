@@ -15,7 +15,7 @@ int main() {
         std::cout << bureaucrat2;
         
         Intern intern;
-        AForm *shrubberyForm = intern.makeForm("shrubbery creation", "Garden");
+        AForm *shrubberyForm = intern.makeForm("Shrubbery creation", "Garden");
         std::cout << *shrubberyForm;
         AForm *robotomyForm = intern.makeForm("rature", "Robot");
         std::cout << *robotomyForm;
