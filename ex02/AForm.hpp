@@ -6,7 +6,7 @@
 /*   By: paul <paul@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 18:34:22 by paul              #+#    #+#             */
-/*   Updated: 2025/06/18 18:34:23 by paul             ###   ########.fr       */
+/*   Updated: 2025/06/18 19:16:43 by paul             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ public:
     AForm(const AForm &copy);
     AForm(const std::string &name, int signGrade, int executeGrade);
     AForm &operator=(const AForm &other);
-    ~AForm();
+    virtual ~AForm();
 
     const std::string &getName() const;
     bool getIsSigned() const;

@@ -6,7 +6,7 @@
 /*   By: paul <paul@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 18:35:33 by paul              #+#    #+#             */
-/*   Updated: 2025/06/18 18:35:34 by paul             ###   ########.fr       */
+/*   Updated: 2025/06/18 19:05:09 by paul             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,21 +73,19 @@ void ShrubberyCreationForm::execute(const Bureaucrat &executor) const
     }
 
     std::ofstream file(this->getTarget().append("_shrubbery").c_str());
-
-    file << "        *               ###               /         "<< std::endl;
-    file << "                    #####             /          " << std::endl;
-    file << "      **           #######           /__       " << std::endl;
-    file << "     **            ###               ||         " << std::endl;
-    file << "    **          #####                       " << std::endl;
-    file << "   ***        #######                      " <<std::endl;;
-    file << "  **         ###               ||         " <<std::endl;;
-    file << " **       #####                       " <<std::endl;;
-    file << "        |              |                         " <<std::endl;;
-    file << "        |              |                         " <<std::endl;;
-    file << "        |              |                         " <<std::endl;;
-    file << "        |              |                         " <<std::endl;;
-    file << "        |              |                         " <<std::endl;;
-    file << "        |              |                         " <<std::endl;;
-    file << "        |              |                ||         " <<std::endl;;
+    
+    file << "       ###    ###     ####   ###    ###     ##    " << std::endl;
+    file << "      #####  #####   ###### #####  #####   ####   " << std::endl;
+    file << "     ############## ########### ####### ########  " << std::endl;
+    file << "       ||     ||       ||     ||     ||     ||    " << std::endl;
+    file << "       ||     ||       ||     ||     ||     ||    " << std::endl;
+    file << "       ||     ||       ||     ||     ||     ||    " << std::endl;
+    file << "                                                 " << std::endl;
+    file << "   ###    ###     ###   ###     ####     ###     " << std::endl;
+    file << "  #####  #####   ##### #####   ######   #####    " << std::endl;
+    file << " ####### ###### ###### ###### ######## ######   " << std::endl;
+    file << "    ||     ||      ||    ||      ||       ||     " << std::endl;
+    file << "    ||     ||      ||    ||      ||       ||     " << std::endl;
+    file << "    ||     ||      ||    ||      ||       ||     " << std::endl;
     file.close();
 }

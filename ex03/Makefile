@@ -6,7 +6,7 @@
 #    By: paul <paul@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/09 18:14:41 by paul              #+#    #+#              #
-#    Updated: 2025/06/10 15:53:23 by paul             ###   ########.fr        #
+#    Updated: 2025/06/18 18:59:15 by paul             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC = main.cpp Bureaucrat.cpp Bureaucrat.hpp AForm.cpp AForm.hpp \
 		Intern.cpp Intern.hpp \
 
 # Nom du fichier exécutable
-OUT = a.out
+OUT = Intern
 
 # Flags de compilation
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98

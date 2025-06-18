@@ -6,13 +6,14 @@
 /*   By: paul <paul@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/18 18:33:42 by paul              #+#    #+#             */
-/*   Updated: 2025/06/18 18:33:43 by paul             ###   ########.fr       */
+/*   Updated: 2025/06/18 18:40:38 by paul             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
 
-int main() {
+int main()
+{
     try 
     {
         Bureaucrat bureaucrat1("Alice", 50);

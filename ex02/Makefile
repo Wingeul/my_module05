@@ -6,7 +6,7 @@
 #    By: paul <paul@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/09 18:14:41 by paul              #+#    #+#              #
-#    Updated: 2025/06/10 15:09:20 by paul             ###   ########.fr        #
+#    Updated: 2025/06/18 18:56:29 by paul             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC = main.cpp Bureaucrat.cpp Bureaucrat.hpp AForm.cpp AForm.hpp \
 		ShrubberyCreationForm.hpp \
 
 # Nom du fichier exécutable
-OUT = a.out
+OUT = Aform
 
 # Flags de compilation
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pgrataco <pgrataco@student.42.fr>          +#+  +:+       +#+         #
+#    By: paul <paul@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/09 18:14:41 by paul              #+#    #+#              #
-#    Updated: 2025/02/27 19:16:40 by pgrataco         ###   ########.fr        #
+#    Updated: 2025/06/18 18:41:36 by paul             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 SRC = main.cpp Bureaucrat.cpp Bureaucrat.hpp
 
 # Nom du fichier exécutable
-OUT = a.out
+OUT = Bureaucrat
 
 # Flags de compilation
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
